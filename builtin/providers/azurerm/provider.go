@@ -37,8 +37,9 @@ func Provider() terraform.ResourceProvider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"azurerm_resource_group":  resourceArmResourceGroup(),
-			"azurerm_virtual_network": resourceArmVirtualNetwork(),
+			"azurerm_resource_group":    resourceArmResourceGroup(),
+			"azurerm_virtual_network":   resourceArmVirtualNetwork(),
+			"azurerm_public_ip_address": resourceArmPublicIPAddress(),
 		},
 
 		ConfigureFunc: providerConfigure,
