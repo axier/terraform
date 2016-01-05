@@ -28,7 +28,6 @@ func resourceArmPublicIPAddress() *schema.Resource {
 			"public_ip_allocation_method": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
-				Elem:     &schema.Schema{Type: schema.TypeString},
 			},
 
 			"location": &schema.Schema{
